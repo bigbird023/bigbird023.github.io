@@ -1,7 +1,7 @@
 ---
 layout: default
 title: DAR Evaluation Methodology
-permalink: /knowledge/DAR_Evaluation
+permalink: /knowledge/evaluation/DAR
 
 ---
 

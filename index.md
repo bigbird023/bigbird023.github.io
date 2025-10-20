@@ -59,14 +59,11 @@ permalink: /
     </div>
   </section>
 
-  <section class="quadrant" aria-labelledby="dar-title">
+  <section class="quadrant" aria-labelledby="comingsoon-title">
     <div>
       <img class="quad-img" src="/assets/img/coming-soon.svg" alt="Coming soon" />
       <h2 id="dar-title">Coming Soon</h2>
       <p>I'm still building out this revamped technical portfolio.</p>
-    </div>
-    <div>
-      <a class="quad-cta" href="/knowledge/evaluation/DAR.md">Open DAR Method</a>
     </div>
   </section>
 
@@ -77,7 +74,7 @@ permalink: /
       <p>Questions, contributions, or files to convert — get in touch or open an Issue in this repo.</p>
     </div>
     <div>
-      <a class="quad-cta" href="mailto:you@example.com">Contact via Email</a>
+      <a class="quad-cta" href="mailto:bigbird023@lonestarbandit.com">Contact via Email</a>
     </div>
   </section>
 </div>

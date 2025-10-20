@@ -16,4 +16,4 @@ This section collects the technical knowledge, evaluations, and processes I've g
 
 ## Evaluation
 
-- DAR (Vendor) evaluation methodology — guidance, scoring rubric, and spreadsheet templates. See: [Vendor DAR evaluation](/knowledge/evaluation/DAR.md)
+- [DAR (Vendor) evaluation methodology](/knowledge/evaluation/DAR.md) — guidance, scoring rubric, and spreadsheet templates.
