@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PlantUML
-permalink: /knowledge/diagrams/plantuml/
+permalink: /knowledge/diagrams/plantuml
 ---
 
 # PlantUML — text-driven diagrams for reproducibility

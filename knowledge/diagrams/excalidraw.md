@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Excalidraw
-permalink: /knowledge/diagrams/excalidraw/
+permalink: /knowledge/diagrams/excalidraw
 ---
 
 # Excalidraw — Sketchy, collaborative diagrams

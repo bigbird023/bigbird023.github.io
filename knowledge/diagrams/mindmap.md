@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mindmaps
-permalink: /knowledge/diagrams/mindmap/
+permalink: /knowledge/diagrams/mindmap
 ---
 
 # Mindmaps — capture structure and relationships

@@ -1,8 +1,8 @@
-(---
+---
 layout: default
 title: draw.io / diagrams.net
-permalink: /knowledge/diagrams/drawio/
----)
+permalink: /knowledge/diagrams/drawio
+---
 
 # draw.io / diagrams.net — Overview & Best Practices
 
