@@ -14,6 +14,10 @@ Experienced Systems Developer, Application Developer, Database Administrator, Da
 
 I have a particular interest in production control and release automation. Recent work has involved implementing formal CI/CD pipelines and build systems using GitLab, Jenkins, Bamboo, and other integrated tools to move code safely from development into production. I regularly work with version control (Git, SVN), build automation, continuous integration, and deployment tooling.
 
+## Linked-In Profile
+
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="craigpbenner" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/craigpbenner?trk=profile-badge">Craig P Benner</a></div>
+
 ## Core Competencies
 
 - System & Software Architecture — designing reliable, maintainable application and data architectures.
