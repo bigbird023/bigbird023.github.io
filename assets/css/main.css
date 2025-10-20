@@ -1,7 +1,7 @@
 /* Minimal styling for GitHub Pages site */
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#222 }
 .container { max-width:900px; margin: 0 auto; padding: 1rem }
-.site-header { background:#003366; color:#fff; padding:0.5rem 0; position: sticky; top: 0; z-index: 999; box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
+.site-header { background:#001c42; color:#fff; padding:0.5rem 0; position: sticky; top: 0; z-index: 999; box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
 .site-title { margin:0; font-size:2.50rem }
 .site-title a { color:inherit; text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem }
 .site-title img { height:5.00rem; width:auto; display:inline-block }
@@ -13,8 +13,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helv
 
 /* Right-side compact 'paper' nav */
 .main-nav { display:flex; gap:0.5rem; align-items:center }
-.site-header .main-nav { background: #ffffff; color: #003366; padding: 0.4rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-.main-nav a { color:#003366; margin:0; text-decoration:none; background:#ffffff; padding:0.5rem 1rem; border-radius:6px; font-weight:600; font-size:1.05rem; border: 1px solid rgba(0,0,0,0.06); }
+.site-header .main-nav { color: #001c42; padding: 0.4rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.main-nav a { color:#001c42; margin:0; text-decoration:none; background:#ffffff; padding:0.5rem 1rem; border-radius:6px; font-weight:600; font-size:1.05rem; border: 1px solid rgba(0,0,0,0.06); }
 .main-nav a:hover { background:#f0f8ff; }
 
 /* Responsive: stack nav under title on narrow screens */
