@@ -29,10 +29,11 @@ permalink: /
 .quadrant h2 { margin-top: 0; margin-bottom: 0.5rem; }
 .quadrant p { margin: 0 0 1rem 0; color: #333; }
 .quad-cta { display:inline-block; padding: 0.5rem 0.8rem; background:#0366d6; color:#fff; border-radius:6px; text-decoration:none; }
-.quadrant .quad-img { width: 72px; height: 72px; display:block; margin-bottom: 0.5rem; }
+.quadrant .quad-img { width: 72px; height: 72px; display:block; float:left; margin: 0 1rem 0.5rem 0; }
 
 @media (max-width: 760px) {
   .quadrant-grid { grid-template-columns: 1fr; }
+  .quadrant .quad-img { float:none; display:block; margin: 0 0 0.75rem 0; }
 }
 </style>
 
