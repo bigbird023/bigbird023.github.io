@@ -19,3 +19,8 @@ This section collects the technical knowledge, evaluations, and processes I've g
  - [Excalidraw](/knowledge/diagrams/excalidraw) — collaborative, sketch-style whiteboard for brainstorming and quick flows; exportable as SVG/PNG.
  - [Mindmaps](/knowledge/diagrams/mindmap) — capture hierarchical ideas and plan projects; exports to OPML/Markdown for import into notes/tasks.
  - [PlantUML](/knowledge/diagrams/plantuml) — text-driven diagrams (sequence, class, component) for reproducible, source-controlled diagrams.
+
+## [SecDevOps](/knowledge/secdevops/)
+
+ - [CICD](/knowledge/secdevops/cicd/)
+ - [Developer Portals](/knowledge/secdevops/developer-portals/)

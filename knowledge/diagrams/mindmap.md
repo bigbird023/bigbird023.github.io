@@ -32,6 +32,7 @@ Mindmaps are ideal for capturing hierarchical ideas, brainstorming, and planning
 
 ## Helpful resources
 
+- Aspose: [https://products.aspose.app/diagram/mindmap](https://products.aspose.app/diagram/mindmap)
 - MindMup: https://www.mindmup.com/
 - XMind: https://www.xmind.net/
 

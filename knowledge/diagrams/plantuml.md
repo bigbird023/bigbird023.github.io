@@ -46,7 +46,7 @@ Bob --> Alice: I am good thanks!
 
 ## Helpful resources
 
-- PlantUML official site: https://plantuml.com/
+- PlantUML official site: [https://plantuml.com/](https://plantuml.com/)
 - PlantUML server / online renderers and VSCode extension for live preview.
 
 ---

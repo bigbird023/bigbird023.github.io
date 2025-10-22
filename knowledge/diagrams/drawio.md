@@ -16,7 +16,7 @@ draw.io (now diagrams.net) is a versatile, free, browser-first diagram editor th
 
 ## Quickstart
 
-1. Visit https://app.diagrams.net/ or install the desktop app.
+1. Visit [https://app.diagrams.net/](https://app.diagrams.net/) or install the desktop app.
 2. Choose a storage option (Local device, Google Drive, OneDrive, GitHub).
 3. Drag shapes from the left palette, connect them, and use the Format panel to style.
 4. Save as `.drawio` (XML), export to PNG/SVG/PDF for sharing.

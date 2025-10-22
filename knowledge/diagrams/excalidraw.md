@@ -16,7 +16,7 @@ Excalidraw is a lightweight, free, open-source whiteboard and sketching tool tha
 
 ## Quickstart
 
-1. Open https://excalidraw.com/ or enable Excalidraw in Obsidian / other editors via plugins.
+1. Open [https://excalidraw.com/](https://excalidraw.com/) or enable Excalidraw in Obsidian / other editors via plugins.
 2. Use the shape tools and freehand drawing to capture ideas quickly.
 3. Export to PNG/SVG or save the Excalidraw JSON for re-editing.
 
