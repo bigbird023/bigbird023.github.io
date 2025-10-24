@@ -22,5 +22,6 @@ This section collects the technical knowledge, evaluations, and processes I've g
 
 ## [SecDevOps](/knowledge/secdevops/)
 
- - [CICD](/knowledge/secdevops/cicd/)
+ - CICD
+     - [Tools](/knowledge/secdevops/cicd/tools)
  - [Developer Portals](/knowledge/secdevops/developer-portals/)

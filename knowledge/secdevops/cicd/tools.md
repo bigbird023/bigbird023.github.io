@@ -1,7 +1,7 @@
 ---
 layout: default
 title: CI/CD & Automation
-permalink: /knowledge/secdevops/cicd/
+permalink: /knowledge/secdevops/cicd/tools
 ---
 
 # CI/CD & Automation — overview and comparison
