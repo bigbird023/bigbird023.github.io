@@ -51,8 +51,6 @@ I believe in making systems observable, automatable, and repeatable. I document 
 - GitHub: https://github.com/bigbird023
 - LinkedIn: https://linkedin.com/in/craigpbenner
 
-Feel free to expand this page with project case studies, code samples, and links to live demos or documentation.
-
 ## Experience (selected)
 
 ### Developer, Specialist — Acentra Health (Remote)  Oct 2024 – Present
