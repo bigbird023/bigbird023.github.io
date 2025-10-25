@@ -1,12 +1,12 @@
 ---
 layout: default
 title: CI/CD Pattern — Separate CI and CD with a Trigger
-permalink: /knowledge/secdevops/cicd/cicd-pattern/
+permalink: git pus
 ---
 
 # CI/CD Pattern: Keep CI and CD separate, bridge with triggers
 
-<img class="pattern-img" src="/assets/img/cicd-pattern.png" alt="CI/CD pattern" />
+<img class="pattern-img" src="/assets/img/CICD-pattern.svg" alt="CI/CD pattern" />
 
 A recommended pattern is to separate Continuous Integration (CI) from Continuous Delivery/Deployment (CD) and use an explicit "trigger" as the hand-off. This makes pipelines more auditable, simplifies security boundaries, and enables flexible promotion workflows across environments.
 
@@ -51,7 +51,7 @@ A recommended pattern is to separate Continuous Integration (CI) from Continuous
 
 ## Example workflow
 
-<img class="pattern-img" src="CICD-pattern.svg" alt="CI/CD pattern" />
+<img class="pattern-img" src="/assets/img/CICD-pattern.svg" alt="CI/CD pattern" />
 
 1. Developer commits to a repository
 2. CI Triggered on Commit
