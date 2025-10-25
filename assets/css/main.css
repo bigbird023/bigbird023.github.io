@@ -28,8 +28,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helv
 pre { background:#f2f2f2; padding:0.5rem }
 
 /* Styled image for CI/CD pattern diagrams */
-.pattern-img {
-	max-width: 900px; /* don't grow beyond this */
+.diagram-img {
+	max-width: 600px; /* don't grow beyond this */
 	width: 100%;      /* scale down on small screens */
 	height: auto;
 	display: block;
@@ -39,6 +39,6 @@ pre { background:#f2f2f2; padding:0.5rem }
 	border-radius: 8px;
 }
 
-@media (max-width:720px) {
-	.pattern-img { max-width: 100%; margin-left: 0; margin-right: 0 }
+@media (max-width:600px) {
+	.diagram-img { max-width: 100%; margin-left: 0; margin-right: 0 }
 }
