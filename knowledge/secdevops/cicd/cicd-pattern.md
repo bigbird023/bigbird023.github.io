@@ -1,14 +1,14 @@
 ---
 layout: default
 title: CI/CD Pattern — Separate CI and CD with a Trigger
-permalink: git pus
+permalink: /knowledge/secdevops/cicd/cicd-pattern
 ---
 
 # CI/CD Pattern: Keep CI and CD separate, bridge with triggers
 
 <img class="pattern-img" src="/assets/img/CICD-pattern.svg" alt="CI/CD pattern" />
 
-A recommended pattern is to separate Continuous Integration (CI) from Continuous Delivery/Deployment (CD) and use an explicit "trigger" as the hand-off. This makes pipelines more auditable, simplifies security boundaries, and enables flexible promotion workflows across environments.
+A recommended pattern is to separate Continuous Integration (CI) from Continuous Delivery/Deployment (CD) and use an explicit "trigger(s)" as the hand-off. This makes pipelines more auditable, simplifies security boundaries, and enables flexible promotion workflows across environments.
 
 ## Roles: CI vs CD
 
@@ -24,19 +24,23 @@ A recommended pattern is to separate Continuous Integration (CI) from Continuous
 
 ## Trigger types (the hand-off)
 
+Different trigger types exist to hand-off CI into CD. 
+
+Single Artifact Deployments:
 - Artifact publish: CI pushes a new image/package to a registry (e.g., Docker registry, Maven/NPM) and the push event triggers CD.
 - Release/tag: CI or release manager creates a semantically-versioned tag or GitHub/GitLab Release which triggers CD to pick up the tagged artifact.
 - Manual approval / Release management: a human approves a promotion (in a release dashboard) which triggers CD.
 - Scheduled/promotional: scheduled promotion (nightly, weekend) or business-driven releases.
 - Webhook/event: custom events from release systems, ticketing (e.g., Jira transition), or external signals.
 
+Multiple Artifact / GitOps Deployments (expected state):
+- GitOps repository commit
+- Manual approval / Release management: a human approves a promotion (in a release dashboard) which triggers CD.
+- Scheduled/promotional: scheduled promotion (nightly, weekend) or business-driven releases.
+
 ## Implementation patterns across platforms
 
-- GitHub Actions: CI workflow builds and publishes image -> image push triggers a separate deployment workflow (via repository_dispatch, image registry webhook, or release tag).
-- GitLab CI: use separate pipelines (or multi-project pipelines) and triggers; CI pushes artifact to registry and triggers downstream CD pipeline.
-- Jenkins: separate declarative pipelines or freestyle jobs; CI job publishes and triggers the CD job via webhook or Jenkins build trigger.
-- Azure DevOps: use Pipelines for CI to publish artifacts to Azure Artifacts or ACR; use Release pipelines or separate YAML CD pipelines triggered by artifact versions.
-- Bitbucket Pipelines: publish artifacts and use deployment variables and pipelines; connect with Jira for release-based triggers.
+[CICD Tools](/knowledge/secdevops/cicd/tools)
 
 ## Best practices
 
@@ -58,12 +62,6 @@ A recommended pattern is to separate Continuous Integration (CI) from Continuous
 3. CI Pattern executes with artifact generation and storage
 4. triggering event for CD
 5. CD Pattern executes with evironment deployment and changes are live
-
-## When triggers vary
-
-- For internal library artifacts you may rely on semantic versioning and release tags as the trigger.
-- For hotfixes you may prefer manual release management to control the cadence.
-- For continuous deployment teams you may chain artifact push -> automated CD with immediate rollout after passing tests.
 
 ## Security considerations
 
