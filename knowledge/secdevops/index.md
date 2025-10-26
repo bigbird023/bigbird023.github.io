@@ -7,6 +7,6 @@ permalink: /knowledge/secdevops/
 # SecDevOps
 
  - CICD
-    - [Pattern](/knowledge/secdevops/cicd-pattern)
+    - [Pattern](/knowledge/secdevops/cicd/cicd-pattern)
     - [Tools](/knowledge/secdevops/cicd/)
  - [Developer Portals](/knowledge/secdevops/developer-portals/)
