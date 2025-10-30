@@ -72,7 +72,6 @@ permalink: /
     <div class="hero-inner">
       <h1 class="hero-title">Engineering & Operational Knowledge</h1>
       <p class="hero-sub">Notes, patterns, and runbooks I drive and maintain.</p>
-      <p><a class="quad-cta" href="/knowledge/">Browse Knowledge</a></p>
     </div>
   </header>
 
