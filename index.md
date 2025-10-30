@@ -68,6 +68,7 @@ permalink: /
   }
 </style>
 
+
   <header class="hero" role="banner" aria-label="Site banner">
     <div class="hero-inner">
       <h1 class="hero-title">Engineering & Operational Knowledge</h1>
