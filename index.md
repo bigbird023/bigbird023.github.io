@@ -35,9 +35,48 @@ permalink: /
   .quadrant-grid { grid-template-columns: 1fr; }
   .quadrant .quad-img { float:none; display:block; margin: 0 0 0.75rem 0; }
 }
+
+  /* Hero banner */
+  .hero {
+    width: 100%;
+    min-height: 280px;
+    background-image: url('/assets/img/banner-scifi-1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; max-width: 1100px; padding: 2rem; text-align: left }
+  .hero-title { margin: 0 0 0.25rem 0; font-size: 2.0rem }
+  .hero-sub { margin: 0 0 1rem 0; opacity: 0.95; font-size:1.05rem }
+
+  @media (max-width:720px) {
+    .hero { min-height: 160px; background-position: center top }
+    .hero-inner { padding: 1rem }
+    .hero-title { font-size:1.4rem }
+  }
 </style>
 
-<div class="quadrant-grid">
+  <header class="hero" role="banner" aria-label="Site banner">
+    <div class="hero-inner">
+      <h1 class="hero-title">Engineering & Operational Knowledge</h1>
+      <p class="hero-sub">Notes, patterns, and runbooks I drive and maintain.</p>
+      <p><a class="quad-cta" href="/knowledge/">Browse Knowledge</a></p>
+    </div>
+  </header>
+
+  <div class="quadrant-grid">
   <section class="quadrant" aria-labelledby="about-title">
     <div>
       <img class="quad-img" src="/assets/img/about.svg" alt="About" />
