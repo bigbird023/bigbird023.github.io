@@ -20,7 +20,9 @@
       </div>
     </header>
     <main class="body-container">
-      {{ content }}
+        <div class="page">
+            {{ content }}
+        </div>
     </main>
     <footer class="site-footer">
       <div class="footer-container">&copy; {{ site.time | date: "%Y" }} {{ site.author | default: "" }}</div>

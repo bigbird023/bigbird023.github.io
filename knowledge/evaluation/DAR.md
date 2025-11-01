@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: DAR Evaluation Methodology
 permalink: /knowledge/evaluation/DAR
 

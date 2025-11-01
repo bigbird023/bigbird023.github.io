@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: CI/CD Pattern — Separate CI and CD with a Trigger
 permalink: /knowledge/secdevops/cicd/cicd-pattern
 ---

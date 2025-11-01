@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Developer Portals
 permalink: /knowledge/secdevops/developer-portals/
 ---

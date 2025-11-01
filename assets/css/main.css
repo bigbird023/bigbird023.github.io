@@ -1,11 +1,21 @@
-/* Minimal styling for GitHub Pages site */
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#222 }
-.container { max-width:900px; margin: 0 auto; padding: 1rem }
+
 .site-header { background:#001c42; color:#fff; padding:0.5rem 0; position: sticky; top: 0; z-index: 999; box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
+
+.header-quadrant-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.header-container { 
+	margin: 0 auto; 
+	position: relative;
+    z-index: 1; 
+}
+
 .site-title { margin:0; font-size:2.50rem }
 .site-title a { color:inherit; text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem }
 .site-title img { height:5.00rem; width:auto; display:inline-block }
-.container { max-width:900px; margin: 0 auto; padding: 1rem }
 
 /* Header layout: left = title, right = nav */
 .site-header .container { display:flex; align-items:center; gap:1rem }
@@ -17,6 +27,49 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helv
 .main-nav a { color:#001c42; margin:0; text-decoration:none; background:#ffffff; padding:0.5rem 1rem; border-radius:6px; font-weight:600; font-size:1.05rem; border: 1px solid rgba(0,0,0,0.06); }
 .main-nav a:hover { background:#f0f8ff; }
 
+body { 
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
+	margin:0; 
+	color:#222;
+	position: relative; /* Essential for positioning the pseudo-element */
+    min-height: 100vh; /* Ensure body covers full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+.body-container { 
+	margin: 0 auto; 
+	padding: 1rem;
+	position: relative; /* Ensures content is above the background */
+    z-index: 1; /* Places content above the background */
+    /* Add other styles for your container content here */
+    padding: 20px;
+    /*background-color: rgba(255, 255, 255, 0.8);*/ /* Example: Semi-transparent background for the container itself */
+}
+
+.body-container::before {
+	content: ""; /* Required for pseudo-elements */
+	position: fixed; /* Fixes the background to the viewport */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('/assets/img/banner-scifi-1.png'); /* Replace with your image path */
+	background-size: cover; /* Ensures the image covers the entire area */
+	background-position: center; /* Centers the image */
+	opacity: 0.5; /* Adjust opacity as desired (0 to 1) */
+	z-index: -1; /* Places the background behind other content */
+}
+
+.footer-container { 
+	margin: 0 auto; 
+	padding: 1rem;
+	position: relative; /* Ensures content is above the background */
+    z-index: 1; /* Places content above the background */
+    /* Add other styles for your container content here */
+    padding: 20px;
+    /*background-color: rgba(255, 255, 255, 0.8);*/ /* Example: Semi-transparent background for the container itself */
+}
+
 /* Responsive: stack nav under title on narrow screens */
 @media (max-width:720px) {
 	.site-header { padding: 0.75rem 0; }
@@ -24,7 +77,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helv
 	.site-header .main-nav { width:100%; margin-left:0; display:flex; justify-content:space-around }
 	.main-nav a { flex:1; text-align:center }
 }
-.site-footer { background:#f6f6f6; padding:0.75rem 0; margin-top:2rem; font-size:0.9rem }
+.site-footer { background:#ffffff; padding:0.75rem 0; margin-top:2rem; font-size:0.9rem }
 pre { background:#f2f2f2; padding:0.5rem }
 
 /* Styled image for CI/CD pattern diagrams */
@@ -44,4 +97,56 @@ pre { background:#f2f2f2; padding:0.5rem }
 
 @media (max-width:600px) {
 	.diagram-img { max-width: 100%; margin-left: 0; margin-right: 0 }
+}
+
+/* Page-scoped quadrant grid for the home page */
+.page {
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: #c0c0c0;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+  opacity: 90%;
+  justify-content: space-between;
+  min-height: 220px;
+}
+
+/* Page-scoped quadrant grid for the home page */
+.quadrant-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr;*/
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+.quadrant {
+  background: #c0c0c0;
+  opacity: 90%;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.quadrant-expanded-minheight {
+  background: #c0c0c0;
+  opacity: 70%;
+  padding: 1.25rem;
+  border-radius: 8px;
+  grid-column: span 2; /* Makes this quadrant span two columns */
+}
+.quadrant h2 { margin-top: 0; margin-bottom: 0.5rem; }
+.quadrant p { margin: 0 0 1rem 0; color: #333; }
+.quad-cta { display:inline-block; padding: 0.5rem 0.8rem; background:#0366d6; color:#fff; border-radius:6px; text-decoration:none; }
+.quadrant .quad-img { width: 72px; height: 72px; display:block; float:left; margin: 0 1rem 0.5rem 0; }
+
+@media (max-width: 760px) {
+  .quadrant-grid { grid-template-columns: 1fr; }
+  .quadrant .quad-img { float:none; display:block; margin: 0 0 0.75rem 0; }
 }

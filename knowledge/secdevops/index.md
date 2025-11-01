@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Developer Portals
 permalink: /knowledge/secdevops/
 ---
@@ -8,5 +8,5 @@ permalink: /knowledge/secdevops/
 
  - CICD
     - [Pattern](/knowledge/secdevops/cicd/cicd-pattern)
-    - [Tools](/knowledge/secdevops/cicd/)
+    - [Tools](/knowledge/secdevops/cicd/tools)
  - [Developer Portals](/knowledge/secdevops/developer-portals/)

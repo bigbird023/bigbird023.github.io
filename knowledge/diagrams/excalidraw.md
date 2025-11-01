@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Excalidraw
 permalink: /knowledge/diagrams/excalidraw
 ---

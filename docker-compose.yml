@@ -1,0 +1,14 @@
+services:
+  jekyll:
+    build: .
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    environment:
+      # Replace with your own GitHub username and repository
+      - PAGES_REPO_NWO=bigbird023/bigbird023.github.io
+      - JEKYLL_ENV=development
+    command: |
+      bash -c "bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling"

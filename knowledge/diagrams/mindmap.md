@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Mindmaps
 permalink: /knowledge/diagrams/mindmap
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: CI/CD & Automation
 permalink: /knowledge/secdevops/cicd/tools
 ---

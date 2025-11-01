@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: draw.io / diagrams.net
 permalink: /knowledge/diagrams/drawio
 ---

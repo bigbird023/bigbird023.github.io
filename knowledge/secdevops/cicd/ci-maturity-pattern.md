@@ -1,5 +1,5 @@
 (---
-layout: default
+layout: page
 title: CI Maturity and Gitflow Release Patterns
 permalink: /knowledge/secdevops/cicd/ci-maturity-pattern/
 ---

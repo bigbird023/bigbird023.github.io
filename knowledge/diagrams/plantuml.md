@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: PlantUML
 permalink: /knowledge/diagrams/plantuml
 ---
