@@ -8,7 +8,7 @@ permalink: /knowledge/secdevops/cicd/cicd-pattern
 
 <img class="diagram-img" src="/assets/img/CICD-pattern.svg" alt="CI/CD pattern" />
 
-A recommended pattern is to separate Continuous Integration (CI) from Continuous Delivery/Deployment (CD) and use an explicit "trigger(s)" as the hand-off. This makes pipelines more auditable, simplifies security boundaries, and enables flexible promotion workflows across environments.
+A recommended pattern is to separate Continuous Integration (CI) from Continuous Delivery/Deployment (CD) and use an explicit "trigger(s)" as the hand-off. This makes pipelines more auditable, simplifies security boundaries, and enables flexible promotion workflows across environments.  This approach allows you to adopt it for any technology for software development.  
 
 ## Roles: CI vs CD
 
@@ -21,6 +21,17 @@ A recommended pattern is to separate Continuous Integration (CI) from Continuous
 - Immutable artifacts: CI produces artifacts (container images, packages) that are promoted; CD should deploy those immutable artifacts rather than rebuilding.
 - Clear audit trail: separation makes it obvious which artifact version was deployed and when.
 - Flexible promotion: different triggers can promote artifacts to environments without rerunning full CI.
+
+## Technologies Supported using this pattern
+
+Majority of the programming languages will be able to fit this pattern.  Although some languages will have the extra utilities to be able to drive better development practices and provide more steps to execute during the CI process.
+
+ - Dotnet C#
+ - Java
+ - Python
+ - Angular
+ - Docker
+ - R (Data Analsys)
 
 ## Trigger types (the hand-off)
 
