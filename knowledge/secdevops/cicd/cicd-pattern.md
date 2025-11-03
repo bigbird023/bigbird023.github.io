@@ -26,18 +26,19 @@ A recommended pattern is to separate Continuous Integration (CI) from Continuous
 
 Majority of the programming languages will be able to fit this pattern.  Although some languages will have the extra utilities to be able to drive better development practices and provide more steps to execute during the CI process.
 
- - Dotnet C#
- - Java
- - Python
- - Angular
- - Docker
- - R (Data Analsys)
+- Dotnet C#
+- Java
+- Python
+- Angular
+- Docker
+- R (Data Analsys)
 
 ## Trigger types (the hand-off)
 
 Different trigger types exist to hand-off CI into CD. 
 
 Single Artifact Deployments:
+
 - Artifact publish: CI pushes a new image/package to a registry (e.g., Docker registry, Maven/NPM) and the push event triggers CD.
 - Release/tag: CI or release manager creates a semantically-versioned tag or GitHub/GitLab Release which triggers CD to pick up the tagged artifact.
 - Manual approval / Release management: a human approves a promotion (in a release dashboard) which triggers CD.
@@ -45,6 +46,7 @@ Single Artifact Deployments:
 - Webhook/event: custom events from release systems, ticketing (e.g., Jira transition), or external signals.
 
 Multiple Artifact / GitOps Deployments (expected state):
+
 - GitOps repository commit
 - Manual approval / Release management: a human approves a promotion (in a release dashboard) which triggers CD.
 - Scheduled/promotional: scheduled promotion (nightly, weekend) or business-driven releases.
@@ -70,7 +72,7 @@ Multiple Artifact / GitOps Deployments (expected state):
 2. CI Triggered on Commit
 3. CI Pattern executes with artifact generation and storage
 4. triggering event for CD
-5. CD Pattern executes with evironment deployment and changes are live
+5. CD Pattern executes with environment deployment and changes are live
 
 ## Security considerations
 
@@ -81,10 +83,11 @@ Multiple Artifact / GitOps Deployments (expected state):
 ## Observability & metrics
 
 Track these KPIs:
+
 - Build-to-deploy time (CI completion to successful production deploy)
 - Deployment frequency and lead time for changes
 - Mean time to rollback/restoration
-- % of deployments using canary or feature-flag rollouts
+- % of deployments using canary or feature-flag rollout
 - Audit trail completeness (are artifact provenance and approvals recorded?)
 
 ## Conclusion
