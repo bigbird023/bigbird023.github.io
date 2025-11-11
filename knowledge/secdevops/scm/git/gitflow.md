@@ -8,7 +8,7 @@ permalink: /knowledge/secdevops/scm/git/gitflow
 
 Gitflow is a popular branching strategy for managing features, releases, and hotfixes in Git repositories. It provides a robust workflow for collaborative development and release management.
 
-![Gitflow diagram](/assets/img/gitflow.png)
+<img src="/assets/img/gitflow.png" alt="Gitflow diagram" style="max-width:600px; width:100%; height:auto; display:block; margin:0 auto;" />
 
 ## Main Branches
 
