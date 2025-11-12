@@ -78,7 +78,7 @@ Gitflow is a popular branching strategy for managing features, releases, and hot
 
 ## Diagram
 
-```mermaid
+<div class="mermaid">
 graph TD
 	A(main) -->|hotfix| H(hotfix/x.y.z)
 	D(develop) -->|feature| F(feature/*)
@@ -91,7 +91,7 @@ graph TD
 	R -->|bugfix| B(bugfix/*)
 	B --> R
 	B --> D
-```
+</div>
 
 ## Summary Table
 
