@@ -90,7 +90,6 @@ graph TD
 	A --> D
 	R -->|bugfix| B(bugfix/*)
 	B --> R
-	B --> D
 </div>
 
 ## Summary Table

@@ -30,13 +30,16 @@ Agile roadmapping is a flexible approach to planning product development, focusi
 <div class="mermaid">
 gantt
     title Agile Roadmap Example
-    dateFormat  YYYY-MM-DD
+    dateFormat  YYYY-MM
+    section Themes
+    Theme Span 1       :active, t1, 2025-01-01, 102d
+    Theme Span 2       :active, t2, after t1, 102d
     section Releases
-    Release 1        :a1, 2025-01-01, 34d
+    Release 1        :active, a1, 2025-01-01, 34d
     Release 2        :a2, after s2, 34d
     Release 3        :a3, after s4, 34d
     section Sprints
-    EP.25.01.01      :s1, 2025-01-01, 14d
+    EP.25.01.01      :active, s1, 2025-01-01, 14d
     EP.25.01.02      :s2, after s1, 14d
     EP.25.02.01      :s3, after s2, 14d
     EP.25.02.02      :s4, after s3, 14d
@@ -44,6 +47,7 @@ gantt
     EP.25.03.02      :s6, after s5, 14d
 </div>
 
+- **Themes** are shown as horizontal bars, each containing many releases.
 - **Releases** are shown as horizontal bars, each containing two sprints.
 - **Sprints** are time-boxed and aligned under their respective releases.
 - Timeline is horizontal, showing progression over time.
