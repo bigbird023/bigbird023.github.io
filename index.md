@@ -29,11 +29,14 @@ permalink: /
         <a class="quad-cta" href="/knowledge/">Browse Knowledge</a>
       </div>
     </section>
-    <section class="quadrant" aria-labelledby="comingsoon-title">
+    <section class="quadrant" aria-labelledby="sideprojects-title">
       <div>
-        <img class="quad-img" src="/assets/img/coming-soon.svg" alt="Coming soon" />
-        <h2 id="dar-title">Coming Soon</h2>
-        <p>I'm still building out this revamped technical portfolio.</p>
+        <img class="quad-img" src="/assets/img/coming-soon.svg" alt="Side Projects" />
+        <h2 id="dar-title">Side Projects</h2>
+        <p>This is just some side projects that I have developed and posted on github.</p>
+      </div>
+      <div>
+        <a class="quad-cta" href="/projects/">Browse Projects</a>
       </div>
     </section>
     <section class="quadrant" aria-labelledby="contact-title">
