@@ -31,7 +31,15 @@ permalink: /
     </section>
     <section class="quadrant" aria-labelledby="sideprojects-title">
       <div>
-        <img class="quad-img" src="/assets/img/coming-soon.svg" alt="Side Projects" />
+        <svg class="quad-cta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="240" height="240">
+          <rect width="64" height="64" rx="8" fill="#4f8cff"/>
+          <g fill="#fff">
+            <rect x="12" y="12" width="16" height="16" rx="3"/>
+            <rect x="36" y="12" width="16" height="16" rx="3"/>
+            <rect x="12" y="36" width="16" height="16" rx="3"/>
+            <rect x="36" y="36" width="16" height="16" rx="3"/>
+          </g>
+        </svg>
         <h2 id="dar-title">Side Projects</h2>
         <p>This is just some side projects that I have developed and posted on github.</p>
       </div>
