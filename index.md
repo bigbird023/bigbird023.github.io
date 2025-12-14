@@ -31,7 +31,7 @@ permalink: /
     </section>
     <section class="quadrant" aria-labelledby="sideprojects-title">
       <div>
-        <svg class="quad-cta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="240" height="240">
+        <svg class="quad-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="72" height="72">
           <rect width="64" height="64" rx="8" fill="#4f8cff"/>
           <g fill="#fff">
             <rect x="12" y="12" width="16" height="16" rx="3"/>
