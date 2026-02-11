@@ -18,20 +18,22 @@ A practical, beginner‑friendly introduction to Git’s decentralized model and
 
 ```mermaid
 flowchart LR
-	 subgraph Remote[Server (GitHub/GitLab/Bitbucket/Azure DevOps)]
-		  R[(origin)]
-	 end
+     subgraph Remote[ServerTypes]
+          R[(origin)]
+     end
 
-	 subgraph Workstation[Workstation]
-		  W[/Workspace: /mnt/project or C:\\project/]
-		  L[Local Repo: .git]
-		  S[[Staging Area (index)]]
-	 end
 
-	 W -- git add --> S
-	 S -- git commit --> L
-	 L -- git push --> R
-	 R -- git fetch/pull --> L
+     subgraph Workstation[Workstation]
+          W[/Workspace: /mnt/project or C:\\project/]
+          L[Local Repo: .git]
+          S[[Staging Area index]]
+     end
+     
+     W -- git add --> S
+     S -- git commit --> L
+     L -- git push --> R
+     R -- git fetch and pull --> L
+
 ```
 
 ASCII fallback:
