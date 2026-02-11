@@ -1,12 +1,17 @@
 ---
 layout: page
-title: CI/CD Pattern — Separate CI and CD with a Trigger
+title: Git — Source Control
 permalink: /knowledge/secdevops/scm/git/
 ---
 
+## Start Here
+
+- Beginners guide: [Git for Beginners](beginners/)
+- Intermediate topics: [Git for Intermediate](git-for-intermediate/)
+
 ## Notes
 
-- merge - no fast forward - non linear history
-- squash commit - combines all commits and put in linear history
-- rebase and fast forward -- shifts to the end and put in linear history
-- semi-linear merge -- shifts and keeps outside on linear history
+- Merge (no fast-forward): non-linear history
+- Squash merge: linear history by combining commits
+- Rebase + fast-forward: replay commits for linear history
+- Semi-linear: combine rebase + merge to keep important branches visible
