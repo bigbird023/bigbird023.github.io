@@ -45,6 +45,19 @@ flowchart LR
 
 ## Get a Repo from Server to Workstation (Clone)
 
+1. Pick a folder for your workspace (examples):
+	- Linux: `/mnt/work/cool-app` or `~/dev/cool-app`
+	- Windows: `C:\Users\you\dev\cool-app`
+2. Clone the remote:
+	```bash
+	git clone https://github.com/your-org/cool-app.git
+	cd cool-app
+	```
+	Prefer SSH if allowed (fewer credential prompts):
+	```bash
+	git clone git@github.com:your-org/cool-app.git
+	```
+	
 ```mermaid
 flowchart LR
      subgraph Remote[ServerTypes]
@@ -62,18 +75,6 @@ flowchart LR
 
 ```
 
-1. Pick a folder for your workspace (examples):
-	- Linux: `/mnt/work/cool-app` or `~/dev/cool-app`
-	- Windows: `C:\Users\you\dev\cool-app`
-2. Clone the remote:
-	```bash
-	git clone https://github.com/your-org/cool-app.git
-	cd cool-app
-	```
-	Prefer SSH if allowed (fewer credential prompts):
-	```bash
-	git clone git@github.com:your-org/cool-app.git
-	```
 3. Confirm your remote:
 	```bash
 	git remote -v   # should show origin with fetch/push URLs
@@ -92,12 +93,45 @@ flowchart LR
 	git add README.md
 	git commit -m "Initial commit"
 	```
+	
+```mermaid
+flowchart LR
+     subgraph Command[CLI]
+          R[/git init command/]
+     end
+
+     subgraph Workstation[Workstation]
+          W[/Workspace: /mnt/project or C:\\project/]
+          L[Local Repo: .git]
+          S[[Staging Area index]]
+     end
+
+	 Command -- git init --> Workstation
+
+```
+
 2. Add a remote and push:
 	```bash
 	git remote add origin https://github.com/your-org/my-new-app.git
 	# or SSH: git remote add origin git@github.com:your-org/my-new-app.git
 	git push -u origin main
 	```
+
+```mermaid
+flowchart LR
+     subgraph Remote[ServerTypes]
+          R[(origin; bitbucket, github, azure devops, etc)]
+     end
+
+     subgraph Workstation[Workstation]
+          W[/Workspace: /mnt/project or C:\\project/]
+          L[Local Repo: .git]
+          S[[Staging Area index]]
+     end
+
+	 Remote -- git push -u origin main --> Workstation
+
+```
 
 ---
 
