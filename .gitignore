@@ -1,3 +1,4 @@
 .lsb
 _site/
 .jekyll-cache/
+.vscode/

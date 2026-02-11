@@ -9,20 +9,8 @@ permalink: /knowledge/
 
 This section collects the technical knowledge, evaluations, and processes I've gathered and curated. It's organized by topic so it's easy to browse, review, and contribute.
 
-## Evaluation
+{% include evaluation_toc.md %}
 
-- [DAR (Vendor) evaluation methodology](/knowledge/evaluation/DAR) — guidance, scoring rubric, and spreadsheet templates.
+{% include diagrams_toc.md %}
 
-## Diagrams
-
- - [Draw.io / diagrams.net](/knowledge/diagrams/drawio) — drag-and-drop editor for architecture, network, and deployment diagrams (XML source, good for Git).
- - [Excalidraw](/knowledge/diagrams/excalidraw) — collaborative, sketch-style whiteboard for brainstorming and quick flows; exportable as SVG/PNG.
- - [Mindmaps](/knowledge/diagrams/mindmap) — capture hierarchical ideas and plan projects; exports to OPML/Markdown for import into notes/tasks.
- - [PlantUML](/knowledge/diagrams/plantuml) — text-driven diagrams (sequence, class, component) for reproducible, source-controlled diagrams.
-
-## [SecDevOps](/knowledge/secdevops/)
-
- - CICD
-     - [Pattern](/knowledge/secdevops/cicd/cicd-pattern)
-     - [Tools](/knowledge/secdevops/cicd/tools)
- - [Developer Portals](/knowledge/secdevops/developer-portals/)
+{% include secdevops_toc.md %}
