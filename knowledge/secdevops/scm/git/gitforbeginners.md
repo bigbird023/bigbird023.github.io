@@ -19,7 +19,7 @@ A practical, beginner‑friendly introduction to Git’s decentralized model and
 ```mermaid
 flowchart LR
      subgraph Remote[ServerTypes]
-          R[(origin)]
+          R[(origin; bitbucket, github, azure devops, etc)]
      end
 
 
@@ -32,7 +32,11 @@ flowchart LR
      W -- git add --> S
      S -- git commit --> L
      L -- git push --> R
-     R -- git fetch and pull --> L
+     R -- git fetch --> L
+     R -- git pull --> L
+     L -- git pull --> S
+     S -- git pull --> W
+
 
 ```
 
