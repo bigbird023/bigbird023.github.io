@@ -37,23 +37,30 @@ flowchart LR
      L -- git pull --> S
      S -- git pull --> W
 
+	 Remote -- git clone --> Workstation
 
-```
-
-ASCII fallback:
-
-```
-[Server: origin] <--- fetch/pull ---> [.git Local Repo]
-		 ^                                   ^
-		 |                                   |
-	  push                              commit
-		 |                                   |
-	[Workspace files] --- add ---> [Staging]
 ```
 
 ---
 
 ## Get a Repo from Server to Workstation (Clone)
+
+```mermaid
+flowchart LR
+     subgraph Remote[ServerTypes]
+          R[(origin; bitbucket, github, azure devops, etc)]
+     end
+
+
+     subgraph Workstation[Workstation]
+          W[/Workspace: /mnt/project or C:\\project/]
+          L[Local Repo: .git]
+          S[[Staging Area index]]
+     end
+
+	 Remote -- git clone --> Workstation
+
+```
 
 1. Pick a folder for your workspace (examples):
 	- Linux: `/mnt/work/cool-app` or `~/dev/cool-app`
