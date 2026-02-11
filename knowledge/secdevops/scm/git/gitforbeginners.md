@@ -129,7 +129,7 @@ flowchart LR
           S[[Staging Area index]]
      end
 
-	 Remote -- git push -u origin main --> Workstation
+	 Workstation -- git push -u origin main --> Remote
 
 ```
 
